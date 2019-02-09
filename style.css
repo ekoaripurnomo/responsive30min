@@ -30,8 +30,12 @@ h3 {
 
 /* Header Styles */
 header{
-  width: 1280px;
+  width: 90%;
   margin: 20px auto;
+}
+
+header img {
+  max-width: 100%;
 }
 
 /* Navigation bar styles */
@@ -41,7 +45,7 @@ nav {
 }
 
 nav ul {
-  width: 1280px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -62,7 +66,7 @@ nav a:hover {
 
 /*Main Section Styles*/
 main {
-  width: 1280px;
+  width: 90%;
   margin: 20px auto;
 }
 
@@ -76,9 +80,9 @@ main:after {
 }
 
 section {
-  width: 900px;
+  width: 72%;
   float: left;
-  margin-right: 20px;
+  margin-right: 3%;
 }
 
 section img {
@@ -99,7 +103,7 @@ article {
 aside {
   border: 1px solid #ddd;
   padding: 20px;
-  width: 300px;
+  width: 25%;
   float: left;
 }
 
@@ -121,9 +125,26 @@ aside a:hover {
 
 /*footer styles*/
 footer {
-  width: 1280px;
+  width: 90%;
   margin: 0 auto;
   background-color: #f3f3f3;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    text-align: center;
+  }
+
+  section, aside {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
 }
